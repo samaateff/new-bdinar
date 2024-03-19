@@ -312,7 +312,7 @@
       </section>
       <section class="pb-lg-13 pb-11">
         <div class="container">
-          <h2 class="text-center my-9">تتبع الطلب</h2>
+          <h4 class="text-center my-8">تتبع الطلب</h4>
           <form>
             <div class="row">
               <div class="col-lg-4 pb-lg-0 pb-11 order-lg-last">
@@ -374,20 +374,64 @@
                       <span>الشحن:</span>
                       <span class="d-block ml-auto text-secondary font-weight-bold">$0</span>
                     </div>
+                
                   </div>
                   <div class="card-footer bg-transparent px-0 pb-1 mx-6">
                     <div class="d-flex align-items-center font-weight-bold mb-3">
                       <span class="text-secondary"> الاجمالي:</span>
                       <span class="d-block ml-auto text-secondary fs-24 font-weight-bold">$99.00</span>
                     </div>
+                    <hr style="background: rgba(0, 0, 0, 0.125) !important; opacity: 0.6 !important;"/>
+                    <div>
+                      <form >
+                      
+                        <div class="d-flex align-items-center font-weight-bold my-2">
+                          <div class="custom-control custom-radio">
+                            <input type="radio" id="buy-22" name="quality" class="custom-control-input">
+                            <label class="custom-control-label custom-control-label-secondary" for="buy-22">
+                              <span class="text-body">
+                                  الدفع نقدا عند الاستلام
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center font-weight-bold mb-3">
+                          <div class="custom-control custom-radio ">
+                            <input type="radio" id="buy-11" name="quality" class="custom-control-input" checked="">
+                            <label class="custom-control-label custom-control-label-secondary" for="buy-11">
+                              <span class="text-body">
+                              <img src="images/cash.png"/>  
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                    <hr style="background: rgba(0, 0, 0, 0.125) !important; opacity: 0.6 !important;"/>
+
+                        <p>سيتم استخدام بياناتك الشخصية لمعالجة طلبك ودعم تجربتك في جميع أنحاء هذا الموقع ولأغراض أخرى موصوفة في <a href="https://trendatt.com/ar/info/PrivacyPolicy" target="_blank" style="color: var(--info ) !important;"> سياسة الخصوصية الخاصة بنا.</a>
+
+                        </p>
+                        <hr style="background: rgba(0, 0, 0, 0.125) !important; opacity: 0.6 !important;"/>
+                        <div class="custom-control custom-checkbox mt-6 mb-5">
+                          <input type="checkbox" class="custom-control-input" name="customCheck6" checked="" id="customCheck5">
+                          <label class="custom-control-label custom-control-label-secondary text-secondary" for="customCheck5">
+                            <span class="text-body">الموافقة على الشروط والاحكام</span>
+                          </label>
+                        </div>
+                <button type="submit" class="btn btn-secondary bg-hover-primary border-hover-primary px-7 mb-4">تنفيذ الطلب</button>
+
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="col-lg-8 pr-xl-15 order-lg-first form-control-01">
-                <p class="mb-2"> زبون متكرر ؟ <a href="#" data-toggle="modal" data-target="#sign-in">
+                <p class="mb-2"> زبون متكرر ؟ 
+                  
+                  <a href="#" class="mx-3" style="color: var(--info) !important;" data-toggle="modal" data-target="#sign-in">
                     اضغط هنا لتسجيل الدخول
-                  </a></p>
-                <p>هل لديك كوبون ؟<a data-toggle="collapse" href="#collapsecoupon" role="button"
+                  </a>
+                </p>
+                <p>هل لديك كوبون ؟<a data-toggle="collapse" class="mx-3" style="color: var(--info) !important;" href="#collapsecoupon" role="button"
                                          aria-expanded="false" aria-controls="collapsecoupon">
                                         اضغط هنا لادخال الكود الخاص بك
                     </a></p>
@@ -395,194 +439,120 @@
                   <div class="card-body pt-6 px-5 pb-7 my-6 border">
                     <p class="card-text text-secondary mb-5">اذا كنت تمتلك كوبون من فضلك نفذه هنا</p>
                     <div class="input-group">
-                      <input type="email" name="coupon_code" class="form-control border-0"
-                                       placeholder="بريدك الالكتروني*">
+                      <input type="text" name="coupon_code" class="form-control "
+                                       placeholder=" كود الخصم*">
                       <div class="input-group-append">
-                        <button class="btn btn-secondary px-3 border-0" type="submit" name="apply_coupon"
+                        <button class="btn btn-secondary px-3 " type="submit" name="apply_coupon"
                                             value="Apply coupon">تنفيذ الكوبون
                         </button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <h4 class="fs-24 pt-1 mb-4">معلومات الشحن</h4>
+                <h4 class="fs-24 pt-1 mb-2">معلومات الشحن</h4>
+                <span class="d-block mb-2 require-text">All Fields with * are Required !</span>
                 <div class="mb-3">
-                  <label class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">الاسم</label>
+                  <label class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase"> الاسم *</label>
                   <div class="row">
-                    <div class="col-md-6 mb-md-0 mb-4">
-                      <input type="text" class="form-control border-0" id="first-name" name="firstname"
-                                       placeholder="الاسم الاول" required="">
-                    </div>
-                    <div class="col-md-6">
-                      <input type="text" class="form-control border-0" id="last-name" name="lasttname"
-                                       placeholder="اسم العائلة" required="">
+                    <div class="col-md-12 mb-md-0 mb-4">
+                      <input type="text" class="form-control " id="first-name" name="firstname"
+                                       placeholder="الاسم بالكامل" required="">
                     </div>
                   </div>
                 </div>
                 <div class="mb-3">
                   <div class="row">
-                    <div class="col-md-8 mb-md-0 mb-4">
+                    <div class="col-md-6 mb-md-0 mb-4">
+                  <label class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase"> رقم الهاتف *</label>
+                      <input type="phone" class="form-control " name="firstname"
+                                       placeholder=" ادخل رقم الهاتف" required="">
+                    </div>
+                    <div class="col-md-6 mb-md-0 mb-4">
+                  <label class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">  البريد الالكتروني *</label>
+                      <input type="email" class="form-control " name="firstname"
+                                       placeholder="ادخل بريدك الالكتروني" required="">
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label
+                      class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">الدولة *</label>
+         <div class="dropdown show lh-1 " style="background-color:#f5f5f5">
+           <a href="#"
+                      class="dropdown-toggle custom-dropdown-toggle text-decoration-none text-secondary p-3 position-relative d-block"
+                      id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false">
+             اخر البلد
+           </a>
+           <div class="dropdown-menu custom-dropdown-item" aria-labelledby="dropdownMenuButton">
+             <a class="dropdown-item" href="#">مصر</a>
+             <a class="dropdown-item" href="#">تونس</a>
+             <a class="dropdown-item" href="#">المغرب</a>
+             <a class="dropdown-item" href="#">الكويت</a>
+           </div>
+         </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label
+                      class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">المدينة *</label>
+         <div class="dropdown show lh-1 " style="background-color:#f5f5f5">
+           <a href="#"
+                      class="dropdown-toggle custom-dropdown-toggle text-decoration-none text-secondary p-3 position-relative d-block"
+                      id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false">
+             اخر البلد
+           </a>
+           <div class="dropdown-menu custom-dropdown-item" aria-labelledby="dropdownMenuButton">
+             <a class="dropdown-item" href="#">مصر</a>
+             <a class="dropdown-item" href="#">تونس</a>
+             <a class="dropdown-item" href="#">المغرب</a>
+             <a class="dropdown-item" href="#">الكويت</a>
+           </div>
+         </div>
+                    </div>
+                  </div>
+                 
+                </div>
+                <div class="mb-3">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <label
+                      class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">المنطقة *</label>
+                      <input type="text" class="form-control "
+                      placeholder="ادخل المنطقة " required="">
+                    </div>
+                 
+                  </div>
+                 
+                </div>
+                <div class="mb-3">
+                  <div class="row">
+                    <div class="col-md-12 mb-md-0 mb-4">
                       <label for="street-address"
                                        class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">
-                        العنوان
+                         العنوان بالتفصيل *
                                   </label>
-                      <input type="text" class="form-control border-0" id="street-address"
+                      <input type="text" class="form-control " id="street-address"
                                        name="streetaddress" required="">
                     </div>
-                    <div class="col-md-4">
-                      <label for="apt" class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">رقم/الشقة</label>
-                      <input type="text" class="form-control border-0" id="apt" name="apt" required="">
-                    </div>
+                 
                   </div>
                 </div>
                 <div class="mb-3">
                   <div class="row">
-                    <div class="col-md-4 mb-md-0 mb-4">
-                      <label for="city" class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">المدينة</label>
-                      <input type="text" class="form-control border-0" id="city" name="city" required="">
+                    <div class="col-md-12 mb-md-0 mb-4">
+                      <label for="street-address"
+                                       class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">
+                        
+                                        ملاحظات الطلب (اختياري)
+                                  </label>
+                      <textarea class="form-control "></textarea>
                     </div>
-                    <div class="col-md-4 mb-md-0 mb-4">
-                      <label for="state" class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">الولاية</label>
-                      <input type="text" class="form-control border-0" id="state" name="state" required="">
-                    </div>
-                    <div class="col-md-4">
-                      <label for="zip" class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">zip
-                        code</label>
-                      <input type="text" class="form-control border-0" id="zip" name="zip" required="">
-                    </div>
+                 
                   </div>
                 </div>
-                <div class="mb-3">
-                  <label
-                               class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">المدينة</label>
-                  <div class="dropdown show lh-1 rounded mb-4" style="background-color:#f5f5f5">
-                    <a href="#"
-                               class="dropdown-toggle custom-dropdown-toggle text-decoration-none text-secondary p-3 position-relative d-block"
-                               id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                               aria-expanded="false">
-                      اخر البلد
-                    </a>
-                    <div class="dropdown-menu custom-dropdown-item" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">مصر</a>
-                      <a class="dropdown-item" href="#">تونس</a>
-                      <a class="dropdown-item" href="#">المغرب</a>
-                      <a class="dropdown-item" href="#">الكويت</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="mb-3">
-                  <label class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">بيانات</label>
-                  <div class="row">
-                    <div class="col-md-6 mb-md-0 mb-4">
-                      <input type="email" class="form-control border-0" id="email" name="email"
-                                       placeholder="البريد الالكتروني" required="">
-                    </div>
-                    <div class="col-md-6">
-                      <input type="number" class="form-control border-0" id="phone" name="phone"
-                                       placeholder="رقم الهاتف" required="">
-                    </div>
-                  </div>
-                </div>
-                <div class="custom-control custom-checkbox mt-6 mb-5">
-                  <input type="checkbox" class="custom-control-input" name="customCheck6" checked=""
-                               id="customCheck5">
-                  <label class="custom-control-label custom-control-label-secondary text-secondary"
-                               for="customCheck5">
-                    <span class="text-body">ادخل العموان كما في الشحن</span>
-                  </label>
-                </div>
-                <div class="mb-3 mb-5">
-                  <h4 class="fs-24 mb-5 mt-8 pt-lg-1 payment">معلومات الدفع</h4>
-                  <a class="btn bg-gray-2 btn-payment payment-paylay px-8 py-3 mr-4" href="#" data-var="paypal">
-                    <svg class="icon icon-paylay fs-32 text-secondary hover-primary">
-                      <use xlink:href="#icon-paylay"></use>
-                    </svg>
-                    <span class="ml-2 text-secondary font-weight-600 fs-16">Paypal</span>
-                  </a>
-                  <a class="btn bg-gray-2 btn-payment payment-card px-7 py-3 active my-sm-0 my-3" href="#" data-var="credit-card">
-                    <svg class="icon icon-card fs-32 text-secondary hover-primary">
-                      <use xlink:href="#icon-card"></use>
-                    </svg>
-                    <span class="ml-2 text-secondary font-weight-600 fs-16">Credit card</span>
-                  </a>
-                </div>
-                <div class="card-box payment-box">
-                  <div class="mb-3">
-                    <label class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">رقم البطاقة</label>
-                    <div class="row align-items-center">
-                      <div class="col-md-6 mb-md-0 mb-4">
-                        <input name="creditCardText" type="text" class="form-control border-0 creditCardText"
-                                           placeholder="**** **** **** ****"/>
-                      </div>
-                      <div class="col-md-6">
-                        <img src="images/Paypal.jpg" alt="Paypal">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mb-3 mb-0">
-                    <div class="row">
-                      <div class="col-md-4 mb-md-0 mb-4">
-                        <label class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">
-                          تاريخ الانتهاء
-                        </label>
-                        <select name="inputMonth" id="inputMonth" class="form-control border-0 px-3">
-                          <option selected>الشهر</option>
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
-                          <option>6</option>
-                          <option>7</option>
-                          <option>8</option>
-                          <option>9</option>
-                          <option>10</option>
-                          <option>11</option>
-                          <option>12</option>
-                        </select>
-                      </div>
-                      <div class="col-md-4 mb-md-0 mb-4">
-                        <label class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase opacity-0 d-md-block d-none">السنة</label>
-                        <select name="inputYaer" id="inputYaer" class="form-control border-0 px-3">
-                          <option selected>السنة</option>
-                          <option>2015</option>
-                          <option>2016</option>
-                          <option>2017</option>
-                          <option>2018</option>
-                          <option>2019</option>
-                          <option>2020</option>
-                          <option>2021</option>
-                        </select>
-                      </div>
-                      <div class="col-md-4">
-                        <label for="security"
-                                           class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">
-                          رقم الائتمان
-                                          </label>
-                        <input name="securityCode" type="text" class="form-control border-0" id="security">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="paylay-box payment-box">
-                  <div class="row">
-                    <div class="col-md-6 mb-4">
-                      <label for="your-email"
-                                       class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">الايميل</label>
-                      <input name="paymentEmail" type="email" class="form-control border-0" id="your-email"
-                                       placeholder="بريدك الالكتروني" required="">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <label for="password"
-                                       class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">الرقم السري</label>
-                      <input name="paymentPassword" type="password" class="form-control border-0" id="password" placeholder="******"
-                                       required="">
-                    </div>
-                  </div>
-                </div>
-                <button type="submit" class="btn btn-secondary bg-hover-primary border-hover-primary px-7 mt-6">تنفيذ الطلب</button>
               </div>
             </div>
           </form>

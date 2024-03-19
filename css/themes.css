@@ -21301,9 +21301,15 @@ a.bg-hover-violet:focus {
   left: auto;
   right: 0;
 }
+.pos-fixed-bottom-left-fam {
+  bottom: 80px;
+  left: 0;
+  animation: bounceIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
 
 .pos-fixed-bottom-left {
-  bottom: 60px;
+  bottom: 10px;
   left: 0;
 }
 
@@ -21628,8 +21634,8 @@ input.checkbox-primary[type="checkbox"] {
   width: 90px !important;
 }
 
-.h-90 {
-  height: 90px;
+.h-90px {
+  height: 90px !important;
 }
 
 .w-98 {
@@ -24113,7 +24119,7 @@ font-size: .875rem;
 .prods .card{
   border: 1px solid #e9ecef !important;
   /* padding-bottom:5px; */
-  /* margin: 5px; */
+  margin: 5px;
   border-radius: 10px;
   overflow: hidden;
   transition: 0.5s;
@@ -24474,8 +24480,8 @@ font-size: .875rem;
   position: absolute;
   text-align: center;
   top: 35px;
-  right: unset;
-  left: 0;
+  /* right: unset; */
+  /* left: 0; */
   z-index: 2;
   min-width: 100px;
   -webkit-transform: rotate(90deg);
@@ -24570,4 +24576,7 @@ left: 0;
 }
 .card-text:last-child {
     margin-bottom: 0px !important; 
+}
+.require-text{
+  color: var(--red);
 }
