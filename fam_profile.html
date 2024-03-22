@@ -26,7 +26,11 @@
     <link rel="stylesheet" href="vendors/mapbox-gl/mapbox-gl.min.css">
     <link rel="stylesheet" href="vendors/fonts/font-phosphor/css/phosphor.min.css">
     <link rel="stylesheet" href="vendors/fonts/tuesday-night/stylesheet.min.css">
-    <link rel="stylesheet" href="vendors/fonts/butler/stylesheet.min.css">
+    <!-- <link rel="stylesheet" href="vendors/fonts/butler/stylesheet.min.css"> -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="vendors/fonts/a-antara-distance/stylesheet.min.css">
     <!-- Themes core CSS -->
     <!--<link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">-->
@@ -39,7 +43,7 @@
     <link rel="icon" type="image/png" href="images/logo.png">
 </head>
 <body>
-<header class="main-header navbar-light header-sticky header-sticky-smart header-03">
+  <header class="main-header navbar-light header-sticky header-sticky-smart header-03">
   
     <section style="  background-color: var(--cyan);" class="topbar tobbar-web bg_primaryColor1 w-100 whiteColor">
       <div class="container container-xl">
@@ -144,7 +148,7 @@
                     <ul class="navbar-nav hover-menu main-menu px-0 mx-xl-n5">
                         <li aria-haspopup="true" aria-expanded="false"
                             class="nav-item dropdown-item-home dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-5">
-                            <a class="nav-link dropdown-toggle p-0"
+                            <a class="nav-link p-0"
                                href="index.html">
                                 الرئيسية
                                 <span class="caret"></span>
@@ -155,7 +159,7 @@
                           </li>
                         <li aria-haspopup="true" aria-expanded="false"
                             class="nav-item dropdown-item-shop dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-5">
-                            <a class="nav-link dropdown-toggle p-0"
+                            <a class="nav-link p-0"
                                href="all-prods.html">
                                 الهواتف واكسسواراتها
                                 <span class="caret"></span>
@@ -164,7 +168,7 @@
                         </li>
                         <li aria-haspopup="true" aria-expanded="false"
                             class="nav-item dropdown-item-pages dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-5">
-                            <a class="nav-link dropdown-toggle p-0"
+                            <a class="nav-link p-0"
                                href="all-prods.html">
                                 المنزل 
                                 <span class="caret"></span>
@@ -173,7 +177,7 @@
                         </li>
                         <li aria-haspopup="true" aria-expanded="false"
                             class="nav-item dropdown-item-blog dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-5">
-                            <a class="nav-link dropdown-toggle p-0"
+                            <a class="nav-link p-0"
                                href="all-prods.html">
                                  العطور والبخور
                                 <span class="caret"></span>
@@ -182,7 +186,7 @@
                         </li>
                         <li aria-haspopup="true" aria-expanded="false"
                             class="nav-item dropdown-item-docs dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-5">
-                            <a class="nav-link dropdown-toggle p-0"
+                            <a class="nav-link p-0"
                                href="all-prods.html">
                                  ادوات التجميل
                                 <span class="caret"></span>
@@ -191,7 +195,7 @@
                         </li>
                         <li aria-haspopup="true" aria-expanded="false"
                         class="nav-item dropdown-item-docs dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-5">
-                        <a class="nav-link dropdown-toggle p-0"
+                        <a class="nav-link p-0"
                            href="all-prods.html">
                               اكسسوارات النساء
                             <span class="caret"></span>
@@ -200,7 +204,7 @@
                     </li>
                     <li aria-haspopup="true" aria-expanded="false"
                     class="nav-item dropdown-item-docs dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-5">
-                    <a class="nav-link dropdown-toggle p-0"
+                    <a class="nav-link  p-0"
                        href="all-prods.html">
                           العناية بالطفل
                         <span class="caret"></span>
@@ -209,22 +213,53 @@
                 </li>
                 <li aria-haspopup="true" aria-expanded="false"
                 class="nav-item dropdown-item-docs dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-5">
-                <a class="nav-link dropdown-toggle p-0"
-                   href="terms&conditions.html">
-                      الشروط والاحكام
-                    <span class="caret"></span>
-                </a>
-             
-            </li>
-            <li aria-haspopup="true" aria-expanded="false"
-            class="nav-item dropdown-item-docs dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-5">
-            <a class="nav-link dropdown-toggle p-0"
-               href="privacy-policy.html">
-                  سياسة الخصوصية
-                <span class="caret"></span>
-            </a>
-         
-        </li>
+                          <a class="nav-link dropdown-toggle p-0"
+                   href="#" data-toggle="dropdown" >
+                            جميع الاقسام
+                            <span class="caret"></span>
+                          </a>
+                          <div class="dropdown-menu px-0 pt-3 dropdown-menu-docs x-animated x-fadeInUp">
+                            <div class="dropdown-body">
+                              <a class="dropdown-item py-1"
+                   href="all-categories.html">
+                                <div class="media">
+                                  <div class="media-body">
+                                    <span class="d-block lh-15">ادوات الاستحمام والعناية بالجسم</span>
+                                  </div>
+                                </div>
+                              </a>
+                              <div class="dropdown-divider m-0"></div>
+                              <a class="dropdown-item py-1"
+                   href="all-categories.html">
+                                <div class="media">
+                                  <div class="media-body">
+                                    <span class="d-block lh-15">نظارات</span>
+                                  </div>
+                                </div>
+                              </a>
+                              <div class="dropdown-divider m-0"></div>
+                              <a class="dropdown-item py-1"
+                   href="all-categories.html">
+                                <div class="media">
+                             
+                                  <div class="media-body">
+                                    <span class="d-block lh-15">عدسات</span>
+                                  </div>
+                                </div>
+                              </a>
+                              <div class="dropdown-divider m-0"></div>
+                              <a class="dropdown-item py-1"
+                   href="all-categories.html" target="_blank">
+                                <div class="media">
+                               
+                                  <div class="media-body">
+                                    <span class="d-block lh-15">الملابس</span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </li>
                     </ul>
                 </div>
             
@@ -278,7 +313,7 @@
                 <div>
                   <a  href="all-prods.html" >
                       <i class='bx bx-user'></i>
-                      <span  class="header_span">الافضل</span>
+                      <span  class="header_span">الأفضل</span>
                   </a>
                   </div>
                   <div>
@@ -302,7 +337,7 @@
       <section class="py-2 bg-gray-2">
         <div class="container">
           <nav aria-label="breadcrumb">
-            <ol class="breadcrumb breadcrumb-site py-0 d-flex justify-content-center">
+            <ol class="breadcrumb breadcrumb-site p-0 d-flex justify-content-start">
               <li class="breadcrumb-item"><a class="text-decoration-none text-body"
                                        href="index.html">الرئيسية</a>
               </li>
@@ -317,9 +352,9 @@
         </div>
       </section>
       <section class="pt-6 text-center">
-        <div class="container">
+        <div class="container-fluid">
           <div class="hover-shine hover-zoom-in">
-            <img src="images/Hande.jpg">
+            <img style="width: 100%;max-height: 350px; object-fit: cover;" src="images/Hande.jpg">
           </div>
         </div>
       </section>
@@ -355,14 +390,14 @@
       <section class="mt-2 mt-md-7 prods">
         <div class="container container-xl">
           <div class="row mb-3">
-            <div class="col-lg-3 col-xl-3 col-md-4 col-6 mb-3 "  data-animate="fadeInUp">
+            <div class="col-lg-3 col-xl-3 col-md-4 col-6 mb-3 "   >
               
-              <div class="card border-0 product" data-animate="fadeInUp">
+              <div class="card border-0 product">
                 <div class="position-relative">
                   <img src="images/images/image_651d63672a29c3011.jpeg">
                   <div class="card-img-overlay d-flex p-3">
-                    <div>
-                      <span class="badge badge-primary">-20%</span>
+                    <div class="badge-product-sale">
+                      <span class="new"></span>
                     </div>
                     <div class="my-auto w-100 content-change-vertical">
                       <a href="product-detail-01.html" data-toggle="tooltip" data-placement="bottom" title="عرض المنتج"
@@ -399,14 +434,13 @@
               </div>
               
             </div>
-            <div class="col-lg-3 col-xl-3 col-md-4 col-6 mb-3  "  data-animate="fadeInUp">
+            <div class="col-lg-3 col-xl-3 col-md-4 col-6 mb-3  "   >
               
-              <div class="card border-0 product" data-animate="fadeInUp">
+              <div class="card border-0 product">
                 <div class="position-relative">
-                  <img src="images/images/image_651d63672a29c3011.jpeg" >
+                  <img src="images/images/image_651d63672a29c3011.jpeg">
                   <div class="card-img-overlay d-flex p-3">
-                    <div>
-                    </div>
+                 
                     <div class="my-auto w-100 content-change-vertical">
                       <a href="product-detail-01.html" data-toggle="tooltip" data-placement="bottom" title="عرض المنتج"
                    class="add-to-cart ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
@@ -414,7 +448,7 @@
                           <use xlink:href="#icon-shopping-bag-open-light"></use>
                         </svg>
                       </a>
-                      <a href="#" data-toggle="tooltip" data-placement="bottom" title="عرض سريع"
+                      <a href="#" data-toggle="tooltip" data-placement="top" title="عرض سريع"
                    class="preview ml-auto d-md-flex align-items-center justify-content-center cursor-pointer text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2 d-none">
                         <span data-toggle="modal" data-target="#quick-view">
                           <svg class="icon icon-eye-light fs-24">
@@ -422,7 +456,7 @@
                           </svg>
                         </span>
                       </a>
-                      <a href="#" data-toggle="tooltip" data-placement="bottom" title="اضافة الى المفضلة"
+                      <a href="#" data-toggle="tooltip" data-placement="top" title="اضافة الى المفضلة"
                    class="add-to-wishlist ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
                         <svg class="icon icon-star-light fs-24">
                           <use xlink:href="#icon-star-light"></use>
@@ -432,7 +466,16 @@
                     </div>
                   </div>
                 </div>
-                <div class="card-body pt-4 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
+                <div class="card-body py-0 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
+                  <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
+                    <span class="require-text">صفقة لمدة محدودة</span>
+                  </p>
+                  <h2 class="card-title fs-15 font-weight-500 "> <span class="badge badge-primary">
+                     خصم بنسبة 20%
+                  </span>
+                </h2>
+                </div>
+                <div class="card-body py-0 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
                   <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
                     <span class="fs-13 font-weight-500 text-decoration-through text-body pr-1">$39.00</span>
                     <span>$29.00</span>
@@ -442,15 +485,13 @@
               </div>
             
           </div>
-          <div class="col-lg-3 col-xl-3 col-md-4 col-6 mb-3  "  data-animate="fadeInUp">
+          <div class="col-lg-3 col-xl-3 col-md-4 col-6 mb-3  "   >
               
-            <div class="card border-0 product" data-animate="fadeInUp">
+            <div class="card border-0 product">
               <div class="position-relative">
                 <img src="images/images/image_651d63672a29c3011.jpeg">
                 <div class="card-img-overlay d-flex p-3">
-                  <div>
-                    <span class="badge badge-warning">جديد</span>
-                  </div>
+               
                   <div class="my-auto w-100 content-change-vertical">
                     <a href="product-detail-01.html" data-toggle="tooltip" data-placement="bottom" title="عرض المنتج"
                  class="add-to-cart ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
@@ -476,7 +517,16 @@
                   </div>
                 </div>
               </div>
-              <div class="card-body pt-4 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
+              <div class="card-body py-0 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
+                <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
+                  <span class="require-text">صفقة لمدة محدودة</span>
+                </p>
+                <h2 class="card-title fs-15 font-weight-500 "> <span class="badge badge-primary">
+                   خصم بنسبة 20%
+                </span>
+              </h2>
+              </div>
+              <div class="card-body py-0 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
                 <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
                   <span class="fs-13 font-weight-500 text-decoration-through text-body pr-1">$39.00</span>
                   <span>$29.00</span>
@@ -486,14 +536,13 @@
             </div>
           
         </div>
-        <div class="col-lg-3 col-xl-3 col-md-4 col-6 mb-3  "  data-animate="fadeInUp">
+        <div class="col-lg-3 col-xl-3 col-md-4 col-6 mb-3  "   >
               
-          <div class="card border-0 product" data-animate="fadeInUp">
+          <div class="card border-0 product">
             <div class="position-relative">
-              <img src="images/images/image_651d63672a29c3011.jpeg" >
+              <img src="images/images/image_651d63672a29c3011.jpeg">
               <div class="card-img-overlay d-flex p-3">
-                <div>
-                </div>
+             
                 <div class="my-auto w-100 content-change-vertical">
                   <a href="product-detail-01.html" data-toggle="tooltip" data-placement="bottom" title="عرض المنتج"
                class="add-to-cart ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
@@ -501,7 +550,7 @@
                       <use xlink:href="#icon-shopping-bag-open-light"></use>
                     </svg>
                   </a>
-                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="عرض سريع"
+                  <a href="#" data-toggle="tooltip" data-placement="top" title="عرض سريع"
                class="preview ml-auto d-md-flex align-items-center justify-content-center cursor-pointer text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2 d-none">
                     <span data-toggle="modal" data-target="#quick-view">
                       <svg class="icon icon-eye-light fs-24">
@@ -509,7 +558,7 @@
                       </svg>
                     </span>
                   </a>
-                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="اضافة الى المفضلة"
+                  <a href="#" data-toggle="tooltip" data-placement="top" title="اضافة الى المفضلة"
                class="add-to-wishlist ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
                     <svg class="icon icon-star-light fs-24">
                       <use xlink:href="#icon-star-light"></use>
@@ -519,7 +568,16 @@
                 </div>
               </div>
             </div>
-            <div class="card-body pt-4 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
+            <div class="card-body py-0 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
+              <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
+                <span class="require-text">صفقة لمدة محدودة</span>
+              </p>
+              <h2 class="card-title fs-15 font-weight-500 "> <span class="badge badge-primary">
+                 خصم بنسبة 20%
+              </span>
+            </h2>
+            </div>
+            <div class="card-body py-0 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
               <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
                 <span class="fs-13 font-weight-500 text-decoration-through text-body pr-1">$39.00</span>
                 <span>$29.00</span>
@@ -530,15 +588,13 @@
         
       </div>
 
-      <div class="col-lg-3 col-xl-3 col-md-4 col-6 mb-3 "  data-animate="fadeInUp">
+      <div class="col-lg-3 col-xl-3 col-md-4 col-6 mb-3 "   >
               
-        <div class="card border-0 product" data-animate="fadeInUp">
+        <div class="card border-0 product">
           <div class="position-relative">
             <img src="images/images/image_651d63672a29c3011.jpeg">
             <div class="card-img-overlay d-flex p-3">
-              <div>
-                <span class="badge badge-primary">-20%</span>
-              </div>
+           
               <div class="my-auto w-100 content-change-vertical">
                 <a href="product-detail-01.html" data-toggle="tooltip" data-placement="bottom" title="عرض المنتج"
              class="add-to-cart ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
@@ -564,7 +620,16 @@
               </div>
             </div>
           </div>
-          <div class="card-body pt-4 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
+          <div class="card-body py-0 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
+            <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
+              <span class="require-text">صفقة لمدة محدودة</span>
+            </p>
+            <h2 class="card-title fs-15 font-weight-500 "> <span class="badge badge-primary">
+               خصم بنسبة 20%
+            </span>
+          </h2>
+          </div>
+          <div class="card-body py-0 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
             <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
               <span class="fs-13 font-weight-500 text-decoration-through text-body pr-1">$39.00</span>
               <span>$29.00</span>
@@ -574,14 +639,13 @@
         </div>
         
       </div>
-      <div class="col-lg-3 col-xl-3 col-md-4 col-6 mb-3  "  data-animate="fadeInUp">
+      <div class="col-lg-3 col-xl-3 col-md-4 col-6 mb-3  "   >
         
-        <div class="card border-0 product" data-animate="fadeInUp">
+        <div class="card border-0 product">
           <div class="position-relative">
-            <img src="images/images/image_651d63672a29c3011.jpeg" >
+            <img src="images/images/image_651d63672a29c3011.jpeg">
             <div class="card-img-overlay d-flex p-3">
-              <div>
-              </div>
+           
               <div class="my-auto w-100 content-change-vertical">
                 <a href="product-detail-01.html" data-toggle="tooltip" data-placement="bottom" title="عرض المنتج"
              class="add-to-cart ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
@@ -589,7 +653,7 @@
                     <use xlink:href="#icon-shopping-bag-open-light"></use>
                   </svg>
                 </a>
-                <a href="#" data-toggle="tooltip" data-placement="bottom" title="عرض سريع"
+                <a href="#" data-toggle="tooltip" data-placement="top" title="عرض سريع"
              class="preview ml-auto d-md-flex align-items-center justify-content-center cursor-pointer text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2 d-none">
                   <span data-toggle="modal" data-target="#quick-view">
                     <svg class="icon icon-eye-light fs-24">
@@ -597,7 +661,7 @@
                     </svg>
                   </span>
                 </a>
-                <a href="#" data-toggle="tooltip" data-placement="bottom" title="اضافة الى المفضلة"
+                <a href="#" data-toggle="tooltip" data-placement="top" title="اضافة الى المفضلة"
              class="add-to-wishlist ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
                   <svg class="icon icon-star-light fs-24">
                     <use xlink:href="#icon-star-light"></use>
@@ -607,7 +671,16 @@
               </div>
             </div>
           </div>
-          <div class="card-body pt-4 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
+          <div class="card-body py-0 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
+            <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
+              <span class="require-text">صفقة لمدة محدودة</span>
+            </p>
+            <h2 class="card-title fs-15 font-weight-500 "> <span class="badge badge-primary">
+               خصم بنسبة 20%
+            </span>
+          </h2>
+          </div>
+          <div class="card-body py-0 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
             <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
               <span class="fs-13 font-weight-500 text-decoration-through text-body pr-1">$39.00</span>
               <span>$29.00</span>
@@ -617,15 +690,13 @@
         </div>
       
     </div>
-    <div class="col-lg-3 col-xl-3 col-md-4 col-6 mb-3  "  data-animate="fadeInUp">
+    <div class="col-lg-3 col-xl-3 col-md-4 col-6 mb-3  "   >
         
-      <div class="card border-0 product" data-animate="fadeInUp">
+      <div class="card border-0 product">
         <div class="position-relative">
           <img src="images/images/image_651d63672a29c3011.jpeg">
           <div class="card-img-overlay d-flex p-3">
-            <div>
-              <span class="badge badge-warning">جديد</span>
-            </div>
+         
             <div class="my-auto w-100 content-change-vertical">
               <a href="product-detail-01.html" data-toggle="tooltip" data-placement="bottom" title="عرض المنتج"
            class="add-to-cart ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
@@ -651,7 +722,16 @@
             </div>
           </div>
         </div>
-        <div class="card-body pt-4 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
+        <div class="card-body py-0 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
+          <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
+            <span class="require-text">صفقة لمدة محدودة</span>
+          </p>
+          <h2 class="card-title fs-15 font-weight-500 "> <span class="badge badge-primary">
+             خصم بنسبة 20%
+          </span>
+        </h2>
+        </div>
+        <div class="card-body py-0 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
           <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
             <span class="fs-13 font-weight-500 text-decoration-through text-body pr-1">$39.00</span>
             <span>$29.00</span>
@@ -659,16 +739,14 @@
           <h2 class="card-title fs-15 font-weight-500 "><a href="product-detail-01.html"> طقم 6 اكواب</a></h2>
         </div>
       </div>
-    
   </div>
-  <div class="col-lg-3 col-xl-3 col-md-4 col-6 mb-3 "  data-animate="fadeInUp">
+  <div class="col-lg-3 col-xl-3 col-md-4 col-6 mb-3 "   >
         
-    <div class="card border-0 product" data-animate="fadeInUp">
+    <div class="card border-0 product">
       <div class="position-relative">
-        <img src="images/images/image_651d63672a29c3011.jpeg" >
+        <img src="images/images/image_651d63672a29c3011.jpeg">
         <div class="card-img-overlay d-flex p-3">
-          <div>
-          </div>
+       
           <div class="my-auto w-100 content-change-vertical">
             <a href="product-detail-01.html" data-toggle="tooltip" data-placement="bottom" title="عرض المنتج"
          class="add-to-cart ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
@@ -676,7 +754,7 @@
                 <use xlink:href="#icon-shopping-bag-open-light"></use>
               </svg>
             </a>
-            <a href="#" data-toggle="tooltip" data-placement="bottom" title="عرض سريع"
+            <a href="#" data-toggle="tooltip" data-placement="top" title="عرض سريع"
          class="preview ml-auto d-md-flex align-items-center justify-content-center cursor-pointer text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2 d-none">
               <span data-toggle="modal" data-target="#quick-view">
                 <svg class="icon icon-eye-light fs-24">
@@ -684,7 +762,7 @@
                 </svg>
               </span>
             </a>
-            <a href="#" data-toggle="tooltip" data-placement="bottom" title="اضافة الى المفضلة"
+            <a href="#" data-toggle="tooltip" data-placement="top" title="اضافة الى المفضلة"
          class="add-to-wishlist ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
               <svg class="icon icon-star-light fs-24">
                 <use xlink:href="#icon-star-light"></use>
@@ -694,7 +772,16 @@
           </div>
         </div>
       </div>
-      <div class="card-body pt-4 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
+      <div class="card-body py-0 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
+        <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
+          <span class="require-text">صفقة لمدة محدودة</span>
+        </p>
+        <h2 class="card-title fs-15 font-weight-500 "> <span class="badge badge-primary">
+           خصم بنسبة 20%
+        </span>
+      </h2>
+      </div>
+      <div class="card-body py-0 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
         <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
           <span class="fs-13 font-weight-500 text-decoration-through text-body pr-1">$39.00</span>
           <span>$29.00</span>
@@ -705,15 +792,13 @@
   
 </div>
 
-<div class="col-lg-3 col-xl-3 col-md-4 col-6 mb-3 "  data-animate="fadeInUp">
+<div class="col-lg-3 col-xl-3 col-md-4 col-6 mb-3 "   >
               
-  <div class="card border-0 product" data-animate="fadeInUp">
+  <div class="card border-0 product">
     <div class="position-relative">
       <img src="images/images/image_651d63672a29c3011.jpeg">
       <div class="card-img-overlay d-flex p-3">
-        <div>
-          <span class="badge badge-primary">-20%</span>
-        </div>
+     
         <div class="my-auto w-100 content-change-vertical">
           <a href="product-detail-01.html" data-toggle="tooltip" data-placement="bottom" title="عرض المنتج"
        class="add-to-cart ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
@@ -739,7 +824,16 @@
         </div>
       </div>
     </div>
-    <div class="card-body pt-4 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
+    <div class="card-body py-0 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
+      <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
+        <span class="require-text">صفقة لمدة محدودة</span>
+      </p>
+      <h2 class="card-title fs-15 font-weight-500 "> <span class="badge badge-primary">
+         خصم بنسبة 20%
+      </span>
+    </h2>
+    </div>
+    <div class="card-body py-0 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
       <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
         <span class="fs-13 font-weight-500 text-decoration-through text-body pr-1">$39.00</span>
         <span>$29.00</span>
@@ -749,14 +843,13 @@
   </div>
   
 </div>
-<div class="col-lg-3 col-xl-3 col-md-4 col-6 mb-3  "  data-animate="fadeInUp">
+<div class="col-lg-3 col-xl-3 col-md-4 col-6 mb-3  "   >
   
-  <div class="card border-0 product" data-animate="fadeInUp">
+  <div class="card border-0 product">
     <div class="position-relative">
-      <img src="images/images/image_651d63672a29c3011.jpeg" >
+      <img src="images/images/image_651d63672a29c3011.jpeg">
       <div class="card-img-overlay d-flex p-3">
-        <div>
-        </div>
+     
         <div class="my-auto w-100 content-change-vertical">
           <a href="product-detail-01.html" data-toggle="tooltip" data-placement="bottom" title="عرض المنتج"
        class="add-to-cart ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
@@ -764,7 +857,7 @@
               <use xlink:href="#icon-shopping-bag-open-light"></use>
             </svg>
           </a>
-          <a href="#" data-toggle="tooltip" data-placement="bottom" title="عرض سريع"
+          <a href="#" data-toggle="tooltip" data-placement="top" title="عرض سريع"
        class="preview ml-auto d-md-flex align-items-center justify-content-center cursor-pointer text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2 d-none">
             <span data-toggle="modal" data-target="#quick-view">
               <svg class="icon icon-eye-light fs-24">
@@ -772,7 +865,7 @@
               </svg>
             </span>
           </a>
-          <a href="#" data-toggle="tooltip" data-placement="bottom" title="اضافة الى المفضلة"
+          <a href="#" data-toggle="tooltip" data-placement="top" title="اضافة الى المفضلة"
        class="add-to-wishlist ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
             <svg class="icon icon-star-light fs-24">
               <use xlink:href="#icon-star-light"></use>
@@ -782,7 +875,16 @@
         </div>
       </div>
     </div>
-    <div class="card-body pt-4 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
+    <div class="card-body py-0 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
+      <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
+        <span class="require-text">صفقة لمدة محدودة</span>
+      </p>
+      <h2 class="card-title fs-15 font-weight-500 "> <span class="badge badge-primary">
+         خصم بنسبة 20%
+      </span>
+    </h2>
+    </div>
+    <div class="card-body py-0 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
       <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
         <span class="fs-13 font-weight-500 text-decoration-through text-body pr-1">$39.00</span>
         <span>$29.00</span>
@@ -792,91 +894,106 @@
   </div>
 
 </div>
-<div class="col-lg-3 col-xl-3 col-md-4 col-6 mb-3  "  data-animate="fadeInUp">
+<div class="col-lg-3 col-xl-3 col-md-4 col-6 mb-3  "   >
   
-<div class="card border-0 product" data-animate="fadeInUp">
-  <div class="position-relative">
-    <img src="images/images/image_651d63672a29c3011.jpeg">
-    <div class="card-img-overlay d-flex p-3">
-      <div>
-        <span class="badge badge-warning">جديد</span>
-      </div>
-      <div class="my-auto w-100 content-change-vertical">
-        <a href="product-detail-01.html" data-toggle="tooltip" data-placement="bottom" title="عرض المنتج"
-     class="add-to-cart ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
-          <svg class="icon icon-shopping-bag-open-light fs-24">
-            <use xlink:href="#icon-shopping-bag-open-light"></use>
-          </svg>
-        </a>
-        <a href="#" data-toggle="tooltip" data-placement="top" title="عرض سريع"
-     class="preview ml-auto d-md-flex align-items-center justify-content-center cursor-pointer text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2 d-none">
-          <span data-toggle="modal" data-target="#quick-view">
-            <svg class="icon icon-eye-light fs-24">
-              <use xlink:href="#icon-eye-light"></use>
-            </svg>
-          </span>
-        </a>
-        <a href="#" data-toggle="tooltip" data-placement="top" title="اضافة الى المفضلة"
-     class="add-to-wishlist ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
-          <svg class="icon icon-star-light fs-24">
-            <use xlink:href="#icon-star-light"></use>
-          </svg>
-        </a>
+  <div class="card border-0 product">
+    <div class="position-relative">
+      <img src="images/images/image_651d63672a29c3011.jpeg">
+      <div class="card-img-overlay d-flex p-3">
      
+        <div class="my-auto w-100 content-change-vertical">
+          <a href="product-detail-01.html" data-toggle="tooltip" data-placement="bottom" title="عرض المنتج"
+       class="add-to-cart ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
+            <svg class="icon icon-shopping-bag-open-light fs-24">
+              <use xlink:href="#icon-shopping-bag-open-light"></use>
+            </svg>
+          </a>
+          <a href="#" data-toggle="tooltip" data-placement="top" title="عرض سريع"
+       class="preview ml-auto d-md-flex align-items-center justify-content-center cursor-pointer text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2 d-none">
+            <span data-toggle="modal" data-target="#quick-view">
+              <svg class="icon icon-eye-light fs-24">
+                <use xlink:href="#icon-eye-light"></use>
+              </svg>
+            </span>
+          </a>
+          <a href="#" data-toggle="tooltip" data-placement="top" title="اضافة الى المفضلة"
+       class="add-to-wishlist ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
+            <svg class="icon icon-star-light fs-24">
+              <use xlink:href="#icon-star-light"></use>
+            </svg>
+          </a>
+       
+        </div>
       </div>
     </div>
+    <div class="card-body py-0 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
+      <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
+        <span class="require-text">صفقة لمدة محدودة</span>
+      </p>
+      <h2 class="card-title fs-15 font-weight-500 "> <span class="badge badge-primary">
+         خصم بنسبة 20%
+      </span>
+    </h2>
+    </div>
+    <div class="card-body py-0 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
+      <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
+        <span class="fs-13 font-weight-500 text-decoration-through text-body pr-1">$39.00</span>
+        <span>$29.00</span>
+      </p>
+      <h2 class="card-title fs-15 font-weight-500 "><a href="product-detail-01.html"> طقم 6 اكواب</a></h2>
+    </div>
   </div>
-  <div class="card-body pt-4 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
-    <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
-      <span class="fs-13 font-weight-500 text-decoration-through text-body pr-1">$39.00</span>
-      <span>$29.00</span>
-    </p>
-    <h2 class="card-title fs-15 font-weight-500 "><a href="product-detail-01.html"> طقم 6 اكواب</a></h2>
-  </div>
-</div>
 
 </div>
-<div class="col-lg-3 col-xl-3 col-md-4 col-6 mb-3  "  data-animate="fadeInUp">
+<div class="col-lg-3 col-xl-3 col-md-4 col-6 mb-3  "   >
   
-<div class="card border-0 product" data-animate="fadeInUp">
-<div class="position-relative">
-  <img src="images/images/image_651d63672a29c3011.jpeg" >
-  <div class="card-img-overlay d-flex p-3">
-    <div>
+  <div class="card border-0 product">
+    <div class="position-relative">
+      <img src="images/images/image_651d63672a29c3011.jpeg">
+      <div class="card-img-overlay d-flex p-3">
+     
+        <div class="my-auto w-100 content-change-vertical">
+          <a href="product-detail-01.html" data-toggle="tooltip" data-placement="bottom" title="عرض المنتج"
+       class="add-to-cart ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
+            <svg class="icon icon-shopping-bag-open-light fs-24">
+              <use xlink:href="#icon-shopping-bag-open-light"></use>
+            </svg>
+          </a>
+          <a href="#" data-toggle="tooltip" data-placement="top" title="عرض سريع"
+       class="preview ml-auto d-md-flex align-items-center justify-content-center cursor-pointer text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2 d-none">
+            <span data-toggle="modal" data-target="#quick-view">
+              <svg class="icon icon-eye-light fs-24">
+                <use xlink:href="#icon-eye-light"></use>
+              </svg>
+            </span>
+          </a>
+          <a href="#" data-toggle="tooltip" data-placement="top" title="اضافة الى المفضلة"
+       class="add-to-wishlist ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
+            <svg class="icon icon-star-light fs-24">
+              <use xlink:href="#icon-star-light"></use>
+            </svg>
+          </a>
+       
+        </div>
+      </div>
     </div>
-    <div class="my-auto w-100 content-change-vertical">
-      <a href="product-detail-01.html" data-toggle="tooltip" data-placement="bottom" title="عرض المنتج"
-   class="add-to-cart ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
-        <svg class="icon icon-shopping-bag-open-light fs-24">
-          <use xlink:href="#icon-shopping-bag-open-light"></use>
-        </svg>
-      </a>
-      <a href="#" data-toggle="tooltip" data-placement="bottom" title="عرض سريع"
-   class="preview ml-auto d-md-flex align-items-center justify-content-center cursor-pointer text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2 d-none">
-        <span data-toggle="modal" data-target="#quick-view">
-          <svg class="icon icon-eye-light fs-24">
-            <use xlink:href="#icon-eye-light"></use>
-          </svg>
-        </span>
-      </a>
-      <a href="#" data-toggle="tooltip" data-placement="bottom" title="اضافة الى المفضلة"
-   class="add-to-wishlist ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
-        <svg class="icon icon-star-light fs-24">
-          <use xlink:href="#icon-star-light"></use>
-        </svg>
-      </a>
-   
+    <div class="card-body py-0 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
+      <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
+        <span class="require-text">صفقة لمدة محدودة</span>
+      </p>
+      <h2 class="card-title fs-15 font-weight-500 "> <span class="badge badge-primary">
+         خصم بنسبة 20%
+      </span>
+    </h2>
+    </div>
+    <div class="card-body py-0 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
+      <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
+        <span class="fs-13 font-weight-500 text-decoration-through text-body pr-1">$39.00</span>
+        <span>$29.00</span>
+      </p>
+      <h2 class="card-title fs-15 font-weight-500 "><a href="product-detail-01.html"> طقم 6 اكواب</a></h2>
     </div>
   </div>
-</div>
-<div class="card-body pt-4 text-center m-auto m-md-1 d-block d-md-flex justify-content-between align-items-center">
-  <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
-    <span class="fs-13 font-weight-500 text-decoration-through text-body pr-1">$39.00</span>
-    <span>$29.00</span>
-  </p>
-  <h2 class="card-title fs-15 font-weight-500 "><a href="product-detail-01.html"> طقم 6 اكواب</a></h2>
-</div>
-</div>
 
 </div>
 
@@ -1439,15 +1556,21 @@
       </div>
 
   </div>
-    <div class="position-fixed pos-fixed-bottom-right p-6 z-index-10">
+    <!-- <div class="position-fixed pos-fixed-bottom-right p-6 z-index-10">
       <a href="#"
       class="gtf-back-to-top text-decoration-none bg-white text-primary hover-white bg-hover-primary shadow p-0 w-48px h-48px rounded-circle fs-20 d-flex align-items-center justify-content-center"
        title="Back To Top"><i
             class="fal fa-arrow-up"></i></a>
+    </div> -->
+    <div class="animate__animated animate__bounceIn animate__infinite	infinite position-fixed pos-fixed-bottom-left-fam p-6 z-index-10">
+      <a href="all-fams.html"
+      class="text-decoration-none bg-dark bg-hover-primary shadow  w-90px h-90px rounded-circle fs-16 d-flex align-items-center justify-content-center">
+        المشاهير
+      </a>
     </div>
     <div class="position-fixed pos-fixed-bottom-left p-6 z-index-10">
       <a href="#"
-      class="text-decoration-none bg-dark bg-hover-primary shadow  w-60px h-60px rounded-circle fs-16 d-flex align-items-center justify-content-center"
+      class="text-decoration-none bg-dark bg-hover-primary shadow   w-60px h-60px  rounded-circle fs-16 d-flex align-items-center justify-content-center"
       data-toggle="modal" data-target="#offers">
         عروض
       </a>
@@ -1705,7 +1828,7 @@
             <div class="tab-content" id="nav-tabContent">
               <div class="tab-pane fade show active" id="nav-log-in" role="tabpanel" aria-labelledby="nav-log-in-tab">
                 <h4 class="fs-34 text-center mb-6">تسجيل الدخول</h4>
-                <p class="text-center fs-16 mb-7">  ليس لديك حساب؟ <a href="#" class="text-secondary border-bottom text-decoration-none">تسجيل </a>جديد</p>
+                <p class="text-center fs-16 mb-7">  ليس لديك حساب؟ <a href="#" class="text-secondary border-bottom text-decoration-none">تسجيل جديد </a></p>
                 <form>
                   <input name="email" type="email" class="form-control border-0 mb-3" placeholder="بريدك الالكتروني" required>
                   <input name="password" type="password" class="form-control border-0" placeholder="كلمة السر" required>

@@ -551,7 +551,7 @@
                 infinite: false,
                 pauseOnHover: false,
                 responsive: [],
-                rtl: false,
+                rtl: true,
                 speed: 300,
                 vertical: false,
                 prevArrow: '<div class="slick-prev" aria-label="Previous"><i class="far fa-chevron-left"></i></div>',
